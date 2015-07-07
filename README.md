@@ -1,10 +1,12 @@
 # PinnedApplications
 PowerShell module to support pinning items to the Taskbar and Start Menu
 
-Running PowerShell V5? Run this to install the module:
+Running **PowerShell V5**? Run this to install the module:
 ````PowerShell
 Install-Module -Name PinnedItem
 ````
+
+###Examples
 
 ````PowerShell
 Get-PinnedItem
