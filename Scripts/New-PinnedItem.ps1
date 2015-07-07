@@ -129,13 +129,15 @@
         $NameSpaceFile = $NameSpace.ParseName($File)
         Switch ($Type) {
             'Taskbar' {
+                $_Verb = ConvertToVerb -Action PintoTaskbar
                 $Verb = $NameSpaceFile.Verbs() | Where {
-                    $_.Name -eq 'Pin to Tas&kbar'
+                    $_.Name -eq $_Verb
                 }                    
             }
             'StartMenu' {
+                $_Verb = ConvertToVerb -Action PintoStartMenu
                 $Verb = $NameSpaceFile.Verbs() | Where {
-                    $_.Name -eq 'Pin to Start Men&u'
+                    $_.Name -eq $_Verb
                 }                     
             }
         }

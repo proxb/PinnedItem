@@ -56,13 +56,15 @@
                 $NameSpaceFile = $NameSpace.ParseName($File)
                 Switch ($Item.Type) {
                     'Taskbar' {
+                        $_Verb = ConvertToVerb -Action UnpinfromTaskbar
                         $Verb = $NameSpaceFile.Verbs() | Where {
-                            $_.Name -eq 'Unpin from Tas&kbar'
+                            $_.Name -eq $_Verb
                         }                    
                     }
                     'StartMenu' {
+                        $_Verb = ConvertToVerb -Action UnpinfromStartMenu
                         $Verb = $NameSpaceFile.Verbs() | Where {
-                            $_.Name -eq 'Unpin from Start Men&u'
+                            $_.Name -eq $_Verb
                         }                     
                     }
                     Default {
