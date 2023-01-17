@@ -36,7 +36,7 @@ namespace System.File.PSItem
         public PinnedType Type;
     }
 }
-"@ -Language CSharpVersion3
+"@ -Language CSharp
 #endregion Define Custom Object
 
 #region Load Functions
